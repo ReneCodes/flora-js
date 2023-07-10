@@ -1,0 +1,81 @@
+.garden {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-plant {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: fit-content;
+
+	padding: 16px;
+
+	border: 1px solid;
+	border-radius: 25px;
+	cursor: default;
+}
+
+.card-img.garden {
+	height: 180px;
+	width: 40%;
+	cursor: pointer;
+}
+
+.card-box-garden {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	margin-left: 8px;
+	margin-right: 0;
+}
+
+.input-garden {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.input-garden p {
+	margin-left: 4px;
+}
+
+.input-garden button {
+	position: absolute;
+	top: 0;
+	right: -15px;
+	font-size: 20px;
+
+	height: 36px;
+	width: 36px;
+
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.input-garden input {
+	width: 100%;
+	padding: 8px 25px 8px 2px;
+	margin-bottom: 4px;
+	font-size: 20px;
+	background-color: transparent;
+
+	border: none;
+	outline: none;
+	border-bottom: 1px solid;
+}
+
+.input-garden input:read-write {
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
+.water-garden {
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 24px;
+}

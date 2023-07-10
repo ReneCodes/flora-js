@@ -1,0 +1,71 @@
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+	font-family: 'Cascadia Code', sans-serif;
+}
+
+:root {
+	color-scheme: light dark;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	--text-black: #313131;
+	--primary: #15aabf;
+	--secondary: #ffcb37;
+	--danger: #ae0d0d;
+
+	--lavender-pastel: #dfdaee;
+	--lavender: #b0a7d5;
+	--lavender20: #e2dfee;
+	--yellow: #fce5ae;
+	--red: #cf8583;
+	--green: #d0f7e8;
+	--blue: #c9e8ec;
+
+	--grey100: #ebebeb;
+	--black: #313131;
+	--white: #fafafa;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: var(--text-black);
+		background-color: var(--white);
+	}
+
+	a:hover {
+		color: #15aabf;
+	}
+	button {
+		background-color: #f9f9f9;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color: var(--white);
+		background-color: var(--black);
+	}
+	.app-component {
+		background-color: var(--white);
+	}
+	.app-content {
+		background-color: var(--black);
+		border-color: var(--white);
+	}
+	.blob.blue,
+	.blob.green,
+	.blob.yellow,
+	.blob.lavender,
+	.note-plant textarea,
+	.banner-box {
+		color: var(--text-black);
+	}
+}
